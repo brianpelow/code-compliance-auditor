@@ -85,6 +85,51 @@ DANGEROUS_PATTERNS: list[tuple[str, str, str, Severity, str]] = [
 
 ENV_IGNORE_ENTRIES = (".env", "*.env", ".env.*", "env/")
 
+# Paths excluded from pattern scanning.
+#
+# Test files intentionally contain the exact patterns these rules detect --
+# a fixture asserting that a hardcoded password is caught must contain one.
+# Rule-definition modules contain the patterns as regex literals.
+# Documentation describes the patterns in prose.
+#
+# Scanning any of these produces guaranteed false positives, and a gating
+# tool that cries wolf is a gating tool people disable.
+TEST_PATH_HINTS = ("test_", "_test.", "/tests/", "tests/", "/spec/", ".spec.", "conftest.py")
+
+RULE_DEFINITION_HINTS = ("auditor/agents/", "auditor\\agents\\")
+
+CODE_SUFFIXES = (".py", ".js", ".ts", ".go", ".rb", ".java", ".rs", ".php")
+
+
+def _is_test_path(path: str) -> bool:
+    lowered = path.lower()
+    return any(hint in lowered for hint in TEST_PATH_HINTS)
+
+
+def _is_rule_definition(path: str) -> bool:
+    normalized = path.replace("\\", "/")
+    return "auditor/agents/" in normalized
+
+
+def _is_code(path: str) -> bool:
+    return path.endswith(CODE_SUFFIXES)
+
+
+def scannable_files(snap: RepoSnapshot, code_only: bool = True) -> dict[str, str]:
+    """Files eligible for pattern scanning.
+
+    Excludes test fixtures, rule definitions, and -- when code_only -- any
+    non-source file such as documentation.
+    """
+    result = {}
+    for path, content in snap.files.items():
+        if _is_test_path(path) or _is_rule_definition(path):
+            continue
+        if code_only and not _is_code(path):
+            continue
+        result[path] = content
+    return result
+
 
 class SecurityAgent:
     """Scans source and configuration for security-relevant patterns."""
@@ -110,7 +155,7 @@ class SecurityAgent:
     def _check_secrets(self, snap: RepoSnapshot, findings: list[Finding]) -> int:
         for rule_id, title, pattern in SECRET_PATTERNS:
             regex = re.compile(pattern)
-            for path, content in snap.files.items():
+            for path, content in scannable_files(snap, code_only=False).items():
                 for line in content.splitlines():
                     if not regex.search(line):
                         continue
@@ -135,7 +180,7 @@ class SecurityAgent:
     def _check_dangerous_patterns(self, snap: RepoSnapshot, findings: list[Finding]) -> int:
         for rule_id, title, pattern, severity, remediation in DANGEROUS_PATTERNS:
             regex = re.compile(pattern)
-            hits = [p for p, c in snap.files.items() if regex.search(c)]
+            hits = [p for p, c in scannable_files(snap).items() if regex.search(c)]
             if hits:
                 findings.append(
                     Finding(
