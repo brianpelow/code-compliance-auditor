@@ -1,14 +1,14 @@
 # Compliance Audit: brianpelow/code-compliance-auditor
 
-**Grade:** A  |  **Score:** 98/100  |  **Date:** 2026-07-18
+**Grade:** A  |  **Score:** 99/100  |  **Date:** 2026-07-19
 
-brianpelow/code-compliance-auditor scores 98/100 (grade A) across security (97), compliance (100), and technical debt (97). No critical or high-severity findings were detected. The highest-priority item is: Deeply nested code.
+brianpelow/code-compliance-auditor scores 99/100 (grade A) across security (100), compliance (100), and technical debt (97). No critical or high-severity findings were detected. The highest-priority item is: Deeply nested code.
 
 ## Scores
 
 | Agent | Score | Findings | Checks |
 |-------|-------|----------|--------|
-| SecurityAgent | 97/100 | 1 | 15 |
+| SecurityAgent | 100/100 | 0 | 15 |
 | ComplianceAgent | 100/100 | 0 | 9 |
 | DebtAgent | 97/100 | 1 | 5 |
 
@@ -17,12 +17,10 @@ brianpelow/code-compliance-auditor scores 98/100 (grade A) across security (97),
 | Severity | Rule | Title | Path |
 |----------|------|-------|------|
 | low | DBT004 | Deeply nested code | `src/auditor/agents/compliance.py` |
-| low | SEC030 | No security policy | `-` |
 
 ## Fix first
 
 1. **Deeply nested code** (low) -- Extract helpers or use early returns to flatten control flow.
-2. **No security policy** (low) -- Add SECURITY.md with a disclosure contact and response expectations.
 
 ---
 
