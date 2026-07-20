@@ -1,14 +1,14 @@
 # Compliance Audit: brianpelow/code-compliance-auditor
 
-**Grade:** A  |  **Score:** 99/100  |  **Date:** 2026-07-19
+**Grade:** A  |  **Score:** 93/100  |  **Date:** 2026-07-20
 
-brianpelow/code-compliance-auditor scores 99/100 (grade A) across security (100), compliance (100), and technical debt (97). No critical or high-severity findings were detected. The highest-priority item is: Deeply nested code.
+brianpelow/code-compliance-auditor scores 93/100 (grade A) across security (85), compliance (100), and technical debt (97). 1 high-severity finding(s) should be resolved before the next release. The highest-priority item is: Shell execution with shell=True.
 
 ## Scores
 
 | Agent | Score | Findings | Checks |
 |-------|-------|----------|--------|
-| SecurityAgent | 100/100 | 0 | 15 |
+| SecurityAgent | 85/100 | 1 | 15 |
 | ComplianceAgent | 100/100 | 0 | 9 |
 | DebtAgent | 97/100 | 1 | 5 |
 
@@ -16,11 +16,13 @@ brianpelow/code-compliance-auditor scores 99/100 (grade A) across security (100)
 
 | Severity | Rule | Title | Path |
 |----------|------|-------|------|
+| high | SEC013 | Shell execution with shell=True | `audit_all.py` |
 | low | DBT004 | Deeply nested code | `src/auditor/agents/compliance.py` |
 
 ## Fix first
 
-1. **Deeply nested code** (low) -- Extract helpers or use early returns to flatten control flow.
+1. **Shell execution with shell=True** (high) -- Pass an argument list instead of shell=True to avoid shell injection.
+2. **Deeply nested code** (low) -- Extract helpers or use early returns to flatten control flow.
 
 ---
 

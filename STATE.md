@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-07-19T18:38:02+00:00
+**Generated:** 2026-07-20T06:01:01+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -15,7 +15,7 @@ which is why it cannot drift the way a hand-maintained document does.
 |--------|-------|
 | Public repos | 37 |
 | Scheduled agents | 26 |
-| Audit average | 94.2/100 |
+| Audit average | 94.0/100 |
 | Grade distribution | 28 A, 6 B, 3 C |
 | Live surfaces healthy | 5 of 5 |
 | Repos below B | 2 |
@@ -42,7 +42,7 @@ which is why it cannot drift the way a hand-maintained document does.
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
 | cab-automation | A | 96 | 2 |
-| code-compliance-auditor | A | 99 | 1 |
+| code-compliance-auditor | A | 93 | 2 |
 | fintech-platform-reference * | B | 90 | 3 |
 | orbit-platform | A | 99 | 1 |
 | platform-conductor | A | 99 | 1 |
