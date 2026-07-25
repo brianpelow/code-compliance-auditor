@@ -1,6 +1,6 @@
 # Compliance Audit: brianpelow/cab-automation
 
-**Grade:** A  |  **Score:** 96/100  |  **Date:** 2026-07-24
+**Grade:** A  |  **Score:** 96/100  |  **Date:** 2026-07-25
 
 brianpelow/cab-automation scores 96/100 (grade A) across security (97), compliance (93), and technical debt (100). No critical or high-severity findings were detected. The highest-priority item is: No architecture decision records.
 
