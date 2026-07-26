@@ -45,6 +45,7 @@ CATEGORIES: dict[str, str] = {
     "IncidentPilot": "Agentic systems",
     "DataPipelineAgent": "Agentic systems",
     "ai-incident-war-room": "Agentic systems",
+    "ai-model-autopsy": "Agentic systems",
     # MCP servers
     "mcp-incident-intel": "MCP servers",
     "mcp-compliance-grc": "MCP servers",
