@@ -39,6 +39,7 @@ CATEGORIES: dict[str, str] = {
     "platform-conductor": "Control plane and governance",
     # Autonomous intelligence
     "ai-regulation-tracker": "Autonomous intelligence",
+    "dependency-sentinel": "Autonomous intelligence",
     "weekly-platform-intelligence": "Autonomous intelligence",
     "BoardroomBrief": "Autonomous intelligence",
     # Agentic systems
