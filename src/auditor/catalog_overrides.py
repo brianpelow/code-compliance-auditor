@@ -1,0 +1,38 @@
+"""Optional curated blurbs and category overrides for the portfolio catalog.
+
+The catalog auto-discovers every repo and uses its GitHub description by
+default, so a new repo always appears with no action here. This file is only
+for cases where a curated blurb reads better than the GitHub description, or
+where a repo needs a category the map does not yet have.
+
+Everything here is optional. An empty file produces a complete catalog.
+"""
+
+from __future__ import annotations
+
+# repo name -> curated one-line blurb (overrides the GitHub description)
+BLURB_OVERRIDES: dict[str, str] = {
+    "mcp-governance-gateway": (
+        "Write-path MCP server: every governance action routes through a "
+        "deterministic policy engine and produces an immutable, hash-sealed "
+        "decision record."
+    ),
+    "compliance-chaos-engineer": (
+        "Chaos engineering for governance controls. Injects governance failures "
+        "and scores detection, honestly reporting a designed blind spot rather "
+        "than a rigged 100 percent."
+    ),
+    "ai-model-autopsy": (
+        "Agentic post-mortem investigator for AI failures. Deterministic "
+        "governance analysis with a live LLM-written narrative that never alters "
+        "a finding."
+    ),
+    "dependency-sentinel": (
+        "Scheduled, async enterprise dependency-triage agent. Deterministic "
+        "security findings from OSV.dev, delta reporting since last run, two "
+        "schedulers, offline-capable."
+    ),
+}
+
+# repo name -> category (overrides the CATEGORIES map if present)
+CATEGORY_OVERRIDES: dict[str, str] = {}
