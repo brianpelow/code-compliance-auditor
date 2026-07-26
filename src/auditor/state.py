@@ -33,6 +33,7 @@ CATEGORIES: dict[str, str] = {
     "orbit-platform": "Control plane and governance",
     "cab-automation": "Control plane and governance",
     "code-compliance-auditor": "Control plane and governance",
+    "compliance-chaos-engineer": "Control plane and governance",
     "regulatory-change-impact-agent": "Control plane and governance",
     "fintech-platform-reference": "Control plane and governance",
     "platform-conductor": "Control plane and governance",
