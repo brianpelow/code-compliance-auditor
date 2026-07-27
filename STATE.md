@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-07-26T05:51:54+00:00
+**Generated:** 2026-07-27T06:18:27+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -13,20 +13,17 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Metric | Value |
 |--------|-------|
-| Public repos | 41 |
-| Scheduled agents | 34 |
-| Audit average | 94.5/100 |
-| Grade distribution | 31 A, 8 B, 2 C |
+| Public repos | 42 |
+| Scheduled agents | 35 |
+| Audit average | 94.6/100 |
+| Grade distribution | 32 A, 8 B, 2 C |
 | Live surfaces healthy | 5 of 5 |
 | Repos below B | 1 |
 
 ## Action items
 
-- **ai-model-autopsy** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
-- **compliance-chaos-engineer** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
 - **cve-bin-tool** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
 - **git_test** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
-- **mcp-governance-gateway** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
 - **git_test** scores 75/100 (grade C)
 
 ## Repository catalog
@@ -46,6 +43,7 @@ which is why it cannot drift the way a hand-maintained document does.
 |------|-------|-------|----------|
 | cab-automation | A | 96 | 2 |
 | code-compliance-auditor | A | 93 | 2 |
+| compliance-chaos-engineer | A | 100 | 0 |
 | fintech-platform-reference * | B | 90 | 3 |
 | orbit-platform | A | 99 | 1 |
 | platform-conductor | A | 99 | 1 |
@@ -57,6 +55,7 @@ which is why it cannot drift the way a hand-maintained document does.
 |------|-------|-------|----------|
 | ai-regulation-tracker | A | 96 | 3 |
 | BoardroomBrief | A | 98 | 2 |
+| dependency-sentinel | A | 99 | 1 |
 | weekly-platform-intelligence | A | 96 | 3 |
 
 ### Agentic systems
@@ -64,6 +63,7 @@ which is why it cannot drift the way a hand-maintained document does.
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
 | ai-incident-war-room | B | 89 | 5 |
+| ai-model-autopsy | A | 99 | 2 |
 | DataPipelineAgent | A | 99 | 1 |
 | IncidentPilot | A | 99 | 1 |
 
@@ -81,6 +81,7 @@ which is why it cannot drift the way a hand-maintained document does.
 |------|-------|-------|----------|
 | mcp-compliance-grc | A | 98 | 2 |
 | mcp-developer-portal | A | 98 | 2 |
+| mcp-governance-gateway | A | 99 | 1 |
 | mcp-incident-intel | A | 98 | 2 |
 
 ### Engineering metrics
@@ -126,11 +127,8 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
-| ai-model-autopsy | A | 99 | 2 |
-| compliance-chaos-engineer | A | 100 | 0 |
 | cve-bin-tool | B | 89 | 6 |
 | git_test | C | 75 | 9 |
-| mcp-governance-gateway | A | 99 | 1 |
 
 **\*** Structural exception:
 
