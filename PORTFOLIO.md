@@ -2,7 +2,7 @@
 
 > Auto-generated manifest of every public repository. Regenerated nightly from the GitHub API by the portfolio's own catalog generator. Do not edit by hand; changes are overwritten on the next run.
 
-**Generated:** 2026-07-31T05:59:07+00:00  
+**Generated:** 2026-08-01T05:48:23+00:00  
 **Total public repositories:** 40
 
 ---
