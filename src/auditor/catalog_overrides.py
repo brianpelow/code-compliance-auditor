@@ -12,6 +12,11 @@ from __future__ import annotations
 
 # repo name -> curated one-line blurb (overrides the GitHub description)
 BLURB_OVERRIDES: dict[str, str] = {
+    "mcp-evidence-ledger": (
+        "MCP server providing an append-only, hash-chained evidence ledger for "
+        "agent actions. Tamper-evident receipts over human-readable local state; "
+        "verify pinpoints any altered record. Deterministic, no LLM."
+    ),
     "mcp-governance-gateway": (
         "Write-path MCP server: every governance action routes through a "
         "deterministic policy engine and produces an immutable, hash-sealed "

@@ -52,6 +52,7 @@ CATEGORIES: dict[str, str] = {
     "mcp-compliance-grc": "MCP servers",
     "mcp-developer-portal": "MCP servers",
     "mcp-governance-gateway": "MCP servers",
+    "mcp-evidence-ledger": "MCP servers",
     # Engineering metrics
     "TeamHealthRadar": "Engineering metrics",
     "PlatformSLOBoard": "Engineering metrics",
