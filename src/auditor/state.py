@@ -41,6 +41,7 @@ CATEGORIES: dict[str, str] = {
     "ai-regulation-tracker": "Autonomous intelligence",
     "dependency-sentinel": "Autonomous intelligence",
     "otel-pipeline-workbench": "Observability",
+    "genai-trace-conformance": "Observability",
     "weekly-platform-intelligence": "Autonomous intelligence",
     "BoardroomBrief": "Autonomous intelligence",
     # Agentic systems
