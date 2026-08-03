@@ -40,6 +40,7 @@ CATEGORIES: dict[str, str] = {
     # Autonomous intelligence
     "ai-regulation-tracker": "Autonomous intelligence",
     "dependency-sentinel": "Autonomous intelligence",
+    "otel-pipeline-workbench": "Observability",
     "weekly-platform-intelligence": "Autonomous intelligence",
     "BoardroomBrief": "Autonomous intelligence",
     # Agentic systems
@@ -85,6 +86,7 @@ CATEGORY_ORDER: tuple[str, ...] = (
     "Agentic systems",
     "Interactive tools",
     "MCP servers",
+    "Observability",
     "Engineering metrics",
     "Platform patterns",
     "Developer productivity",

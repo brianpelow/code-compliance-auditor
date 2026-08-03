@@ -12,6 +12,12 @@ from __future__ import annotations
 
 # repo name -> curated one-line blurb (overrides the GitHub description)
 BLURB_OVERRIDES: dict[str, str] = {
+    "otel-pipeline-workbench": (
+        "Deterministic workbench for OpenTelemetry Collector configs: lint them "
+        "for correctness, security, and cost-safety, and simulate telemetry flow "
+        "to see what a config drops, samples, and transforms before prod. "
+        "CI-gateable, no LLM."
+    ),
     "mcp-evidence-ledger": (
         "MCP server providing an append-only, hash-chained evidence ledger for "
         "agent actions. Tamper-evident receipts over human-readable local state; "
