@@ -12,6 +12,13 @@ from __future__ import annotations
 
 # repo name -> curated one-line blurb (overrides the GitHub description)
 BLURB_OVERRIDES: dict[str, str] = {
+    "genai-trace-conformance": (
+        "Deterministic conformance validator for GenAI/agent telemetry. Checks "
+        "real OTLP traces against the OpenTelemetry GenAI semantic conventions: "
+        "required gen_ai.* attributes, token/cost observability, content-capture "
+        "safety (flags secrets in telemetry), and agent-trace structure. Graded, "
+        "CI-gateable, no LLM."
+    ),
     "otel-pipeline-workbench": (
         "Deterministic workbench for OpenTelemetry Collector configs: lint them "
         "for correctness, security, and cost-safety, and simulate telemetry flow "
