@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-08-03T06:11:18+00:00
+**Generated:** 2026-08-04T05:40:18+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -13,10 +13,10 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Metric | Value |
 |--------|-------|
-| Public repos | 42 |
+| Public repos | 45 |
 | Scheduled agents | 35 |
-| Audit average | 94.6/100 |
-| Grade distribution | 32 A, 8 B, 2 C |
+| Audit average | 94.9/100 |
+| Grade distribution | 35 A, 8 B, 2 C |
 | Live surfaces healthy | 5 of 5 |
 | Repos below B | 1 |
 
@@ -81,8 +81,16 @@ which is why it cannot drift the way a hand-maintained document does.
 |------|-------|-------|----------|
 | mcp-compliance-grc | A | 98 | 2 |
 | mcp-developer-portal | A | 98 | 2 |
+| mcp-evidence-ledger | A | 99 | 2 |
 | mcp-governance-gateway | A | 99 | 1 |
 | mcp-incident-intel | A | 98 | 2 |
+
+### Observability
+
+| Repo | Grade | Score | Findings |
+|------|-------|-------|----------|
+| genai-trace-conformance | A | 99 | 1 |
+| otel-pipeline-workbench | A | 99 | 1 |
 
 ### Engineering metrics
 

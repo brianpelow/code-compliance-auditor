@@ -2,8 +2,8 @@
 
 > Auto-generated manifest of every public repository. Regenerated nightly from the GitHub API by the portfolio's own catalog generator. Do not edit by hand; changes are overwritten on the next run.
 
-**Generated:** 2026-08-03T06:13:06+00:00  
-**Total public repositories:** 40
+**Generated:** 2026-08-04T05:43:53+00:00  
+**Total public repositories:** 43
 
 ---
 
@@ -72,10 +72,19 @@
   `compliance` `fintech` `iso27001` `mcp` `model-context-protocol` `pci-dss`
 - **[mcp-developer-portal](https://github.com/brianpelow/mcp-developer-portal)** - MCP server wrapping Backstage - query service catalog, fetch TechDocs, and scaffold services via AI agents  
   `backstage` `developer-portal` `mcp` `model-context-protocol` `platform-engineering` `python`
+- **[mcp-evidence-ledger](https://github.com/brianpelow/mcp-evidence-ledger)** - MCP server providing an append-only, hash-chained evidence ledger for agent actions. Tamper-evident receipts over human-readable local state; verify pinpoints any altered record. Deterministic, no LLM.  
+  `agent-governance` `audit-trail` `hash-chain` `mcp` `mcp-server` `provenance`
 - **[mcp-governance-gateway](https://github.com/brianpelow/mcp-governance-gateway)** - Write-path MCP server: every governance action routes through a deterministic policy engine and produces an immutable, hash-sealed decision record.  
   `agentic-ai` `audit-trail` `fintech` `governance` `mcp` `model-context-protocol`
 - **[mcp-incident-intel](https://github.com/brianpelow/mcp-incident-intel)** - MCP server wiring PagerDuty, Dynatrace, and runbook context for AI-driven incident response  
   `dynatrace` `incident-response` `mcp` `model-context-protocol` `pagerduty` `python`
+
+## Observability
+
+- **[genai-trace-conformance](https://github.com/brianpelow/genai-trace-conformance)** - Deterministic conformance validator for GenAI/agent telemetry. Checks real OTLP traces against the OpenTelemetry GenAI semantic conventions: required gen_ai.* attributes, token/cost observability, content-capture safety (flags secrets in telemetry), and agent-trace structure. Graded, CI-gateable, no LLM.  
+  `ai-agents` `genai` `llm-observability` `observability` `opentelemetry` `otlp`
+- **[otel-pipeline-workbench](https://github.com/brianpelow/otel-pipeline-workbench)** - Deterministic workbench for OpenTelemetry Collector configs: lint them for correctness, security, and cost-safety, and simulate telemetry flow to see what a config drops, samples, and transforms before prod. CI-gateable, no LLM.  
+  `collector` `devsecops` `observability` `opentelemetry` `otel` `python`
 
 ## Engineering metrics
 
