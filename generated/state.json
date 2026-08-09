@@ -1,0 +1,360 @@
+{
+  "generated_at": "2026-08-09T00:29:26+00:00",
+  "scheduled_agents": 35,
+  "ci_status": {
+    "portfolio-assistant": "success",
+    "cto-interview-simulator": "success",
+    "platform-maturity-assessment": "success",
+    "ai-incident-war-room": "success",
+    "brianpelow.github.io": "success"
+  },
+  "repos": [
+    {
+      "name": "BoardroomBrief",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "DataPipelineAgent",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "IncidentPilot",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "PlatformSLOBoard",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "TeamHealthRadar",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "TechDebtLedger",
+      "grade": "A",
+      "score": 97,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "ai-governance-framework",
+      "grade": "A",
+      "score": 93,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "ai-incident-war-room",
+      "grade": "B",
+      "score": 89,
+      "findings": 5,
+      "error": ""
+    },
+    {
+      "name": "ai-model-autopsy",
+      "grade": "A",
+      "score": 99,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "ai-regulation-tracker",
+      "grade": "A",
+      "score": 96,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "brianpelow",
+      "grade": "C",
+      "score": 76,
+      "findings": 8,
+      "error": ""
+    },
+    {
+      "name": "brianpelow.github.io",
+      "grade": "B",
+      "score": 86,
+      "findings": 6,
+      "error": ""
+    },
+    {
+      "name": "cab-automation",
+      "grade": "A",
+      "score": 96,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "code-compliance-auditor",
+      "grade": "A",
+      "score": 93,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "code-roast",
+      "grade": "A",
+      "score": 94,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "compliance-chaos-engineer",
+      "grade": "A",
+      "score": 100,
+      "findings": 0,
+      "error": ""
+    },
+    {
+      "name": "cto-interview-simulator",
+      "grade": "B",
+      "score": 89,
+      "findings": 5,
+      "error": ""
+    },
+    {
+      "name": "cve-bin-tool",
+      "grade": "B",
+      "score": 89,
+      "findings": 6,
+      "error": ""
+    },
+    {
+      "name": "dependency-sentinel",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "engineering-operating-model",
+      "grade": "A",
+      "score": 93,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "fintech-platform-reference",
+      "grade": "B",
+      "score": 90,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "genai-trace-conformance",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "git_test",
+      "grade": "C",
+      "score": 75,
+      "findings": 9,
+      "error": ""
+    },
+    {
+      "name": "innersource-scorecard",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "integrated-strategy",
+      "grade": "B",
+      "score": 91,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "mcp-compliance-grc",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "mcp-developer-portal",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "mcp-evidence-ledger",
+      "grade": "A",
+      "score": 99,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "mcp-governance-gateway",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "mcp-incident-intel",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "orbit-platform",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "otel-pipeline-workbench",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "platform-conductor",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "platform-engineering-thesis",
+      "grade": "A",
+      "score": 93,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "platform-maturity-assessment",
+      "grade": "B",
+      "score": 89,
+      "findings": 5,
+      "error": ""
+    },
+    {
+      "name": "platform-maturity-model",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "portfolio-assistant",
+      "grade": "B",
+      "score": 89,
+      "findings": 5,
+      "error": ""
+    },
+    {
+      "name": "pr-autopilot",
+      "grade": "A",
+      "score": 98,
+      "findings": 2,
+      "error": ""
+    },
+    {
+      "name": "regulatory-change-impact-agent",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "repoforge",
+      "grade": "A",
+      "score": 93,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "runbook-gen",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "service-catalog-sync",
+      "grade": "A",
+      "score": 99,
+      "findings": 1,
+      "error": ""
+    },
+    {
+      "name": "sports-analytics-for-engineers",
+      "grade": "A",
+      "score": 97,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "vibe-check-cli",
+      "grade": "A",
+      "score": 97,
+      "findings": 3,
+      "error": ""
+    },
+    {
+      "name": "weekly-platform-intelligence",
+      "grade": "A",
+      "score": 96,
+      "findings": 3,
+      "error": ""
+    }
+  ],
+  "surfaces": [
+    {
+      "url": "https://brianpelow.github.io/",
+      "status": 200,
+      "non_ascii": 0,
+      "error": ""
+    },
+    {
+      "url": "https://brianpelow.github.io/portfolio-assistant/",
+      "status": 200,
+      "non_ascii": 0,
+      "error": ""
+    },
+    {
+      "url": "https://brianpelow.github.io/cto-interview-simulator/",
+      "status": 200,
+      "non_ascii": 0,
+      "error": ""
+    },
+    {
+      "url": "https://brianpelow.github.io/platform-maturity-assessment/",
+      "status": 200,
+      "non_ascii": 0,
+      "error": ""
+    },
+    {
+      "url": "https://brianpelow.github.io/ai-incident-war-room/",
+      "status": 200,
+      "non_ascii": 0,
+      "error": ""
+    }
+  ]
+}

@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
@@ -25,6 +27,23 @@ def run() -> int:
 
     if state.uncategorized:
         print(f"[state] UNCATEGORIZED: {', '.join(state.uncategorized)}")
+
+    generated = REPO_ROOT / "generated"
+    generated.mkdir(exist_ok=True)
+    (generated / "state.json").write_text(
+        json.dumps(
+            {
+                "generated_at": state.generated_at,
+                "scheduled_agents": state.scheduled_agents,
+                "ci_status": state.ci_status,
+                "repos": [asdict(r) for r in state.repos],
+                "surfaces": [asdict(s) for s in state.surfaces],
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    print("[state] Wrote generated/state.json")
 
     out = REPO_ROOT / "STATE.md"
     out.write_text(render(state), encoding="utf-8")

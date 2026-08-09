@@ -1,0 +1,713 @@
+{
+  "generated_at": "2026-08-09T00:32:13+00:00",
+  "category_order": [
+    "Technology strategy",
+    "Control plane and governance",
+    "Autonomous intelligence",
+    "Agentic systems",
+    "Interactive tools",
+    "MCP servers",
+    "Observability",
+    "Engineering metrics",
+    "Platform patterns",
+    "Developer productivity",
+    "Just for fun",
+    "Meta",
+    "Uncategorized"
+  ],
+  "entries": [
+    {
+      "name": "BoardroomBrief",
+      "blurb": "Autonomous weekly engineering brief generator - pulls GitHub, JIRA, and incident data into exec-ready narratives",
+      "category": "Autonomous intelligence",
+      "topics": [
+        "agents",
+        "ai-agents",
+        "autonomous",
+        "engineering-metrics",
+        "executive-reporting",
+        "fintech",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "DataPipelineAgent",
+      "blurb": "Agentic ETL orchestrator - monitors data sources, detects schema drift, and auto-heals pipelines",
+      "category": "Agentic systems",
+      "topics": [
+        "agents",
+        "data-pipeline",
+        "etl",
+        "fintech",
+        "platform-engineering",
+        "python",
+        "schema-drift"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "IncidentPilot",
+      "blurb": "Multi-agent incident response orchestrator - triage, escalation, runbook generation, and post-mortems with LangGraph",
+      "category": "Agentic systems",
+      "topics": [
+        "ai-agents",
+        "fintech",
+        "incident-response",
+        "langgraph",
+        "platform-engineering",
+        "python",
+        "sre"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "PlatformSLOBoard",
+      "blurb": "Executive-grade platform SLO dashboard aggregating PagerDuty and Dynatrace reliability signals",
+      "category": "Engineering metrics",
+      "topics": [
+        "dynatrace",
+        "error-budget",
+        "fastapi",
+        "fintech",
+        "pagerduty",
+        "platform-engineering",
+        "python",
+        "slo"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "TeamHealthRadar",
+      "blurb": "Engineering team health scoring - DORA metrics, SPACE framework signals, and AI-synthesized insights",
+      "category": "Engineering metrics",
+      "topics": [
+        "dora-metrics",
+        "engineering-metrics",
+        "fastapi",
+        "fintech",
+        "platform-engineering",
+        "python",
+        "space-framework"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "TechDebtLedger",
+      "blurb": "Automated tech debt tracker - scans repos for complexity hotspots and surfaces a prioritized payoff roadmap",
+      "category": "Engineering metrics",
+      "topics": [
+        "complexity",
+        "fastapi",
+        "fintech",
+        "platform-engineering",
+        "python",
+        "static-analysis",
+        "tech-debt"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "ai-governance-framework",
+      "blurb": "AI governance in regulated industries: the replay imperative - decision record architecture, model registry, and the four actors who will demand accountability",
+      "category": "Technology strategy",
+      "topics": [
+        "ai-governance",
+        "decision-records",
+        "fintech",
+        "model-registry",
+        "model-risk-management",
+        "regulated-industries",
+        "replay",
+        "technology-strategy"
+      ],
+      "language": "",
+      "archived": false
+    },
+    {
+      "name": "ai-incident-war-room",
+      "blurb": "Live multi-agent AI incident simulation for regulated industries - five agents coordinate in real time to produce a complete incident response package",
+      "category": "Agentic systems",
+      "topics": [
+        "ai-governance",
+        "fintech",
+        "incident-response",
+        "interactive",
+        "model-risk",
+        "multi-agent",
+        "regulated-industries",
+        "simulation"
+      ],
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "name": "ai-model-autopsy",
+      "blurb": "Agentic post-mortem investigator for AI failures. Deterministic governance analysis with a live LLM-written narrative that never alters a finding.",
+      "category": "Agentic systems",
+      "topics": [
+        "agentic-ai",
+        "ai-governance",
+        "incident-analysis",
+        "llm",
+        "openrouter",
+        "post-mortem",
+        "python",
+        "regulated-industries"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "ai-regulation-tracker",
+      "blurb": "Nightly agent monitoring OCC, FCA, ECB, FFIEC, CFPB, and EU AI Act feeds for AI-relevant regulatory developments - published daily to GitHub Discussions",
+      "category": "Autonomous intelligence",
+      "topics": [
+        "ai-governance",
+        "autonomous",
+        "compliance",
+        "eu-ai-act",
+        "fca",
+        "fintech",
+        "occ",
+        "regulation"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "brianpelow",
+      "blurb": "GitHub profile",
+      "category": "Meta",
+      "topics": [],
+      "language": "",
+      "archived": false
+    },
+    {
+      "name": "brianpelow.github.io",
+      "blurb": "Live platform engineering intelligence dashboard",
+      "category": "Meta",
+      "topics": [
+        "dashboard",
+        "fintech",
+        "github-pages",
+        "platform-engineering",
+        "portfolio"
+      ],
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "name": "cab-automation",
+      "blurb": "Change Advisory Board automation - AI-generated CAB packages, risk scoring, and deployment gates for regulated financial services",
+      "category": "Control plane and governance",
+      "topics": [
+        "cab",
+        "change-management",
+        "fintech",
+        "governance",
+        "pci-dss",
+        "platform-engineering",
+        "python",
+        "sox-itgc"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "code-compliance-auditor",
+      "blurb": "Deterministic multi-agent compliance auditor for GitHub repositories - security, compliance, and technical debt scoring with prioritized remediation",
+      "category": "Control plane and governance",
+      "topics": [
+        "audit",
+        "compliance",
+        "devsecops",
+        "fintech",
+        "governance",
+        "regulated-industries",
+        "security-scanning",
+        "static-analysis"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "code-roast",
+      "blurb": "Paste any code and get it brutally but lovingly roasted by a senior engineer who has seen things",
+      "category": "Just for fun",
+      "topics": [
+        "cli",
+        "code-review",
+        "developer-tools",
+        "fun",
+        "llm",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "compliance-chaos-engineer",
+      "blurb": "Chaos engineering for governance controls. Injects governance failures and scores detection, honestly reporting a designed blind spot rather than a rigged 100 percent.",
+      "category": "Control plane and governance",
+      "topics": [
+        "chaos-engineering",
+        "compliance",
+        "fintech",
+        "governance",
+        "python",
+        "regulated-industries",
+        "security",
+        "testing"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "cto-interview-simulator",
+      "blurb": "An AI-powered CTO interview simulator - experience the interview before you sit down with the candidate",
+      "category": "Interactive tools",
+      "topics": [
+        "adaptive",
+        "ai",
+        "cto",
+        "interview",
+        "leadership",
+        "platform-engineering",
+        "portfolio",
+        "simulator"
+      ],
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "name": "dependency-sentinel",
+      "blurb": "Scheduled, async enterprise dependency-triage agent. Deterministic security findings from OSV.dev, delta reporting since last run, two schedulers, offline-capable.",
+      "category": "Autonomous intelligence",
+      "topics": [
+        "agentic-ai",
+        "dependency-management",
+        "devsecops",
+        "osv",
+        "python",
+        "scheduled-agent",
+        "supply-chain-security",
+        "vulnerability-scanning"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "engineering-operating-model",
+      "blurb": "How I think about building and leading engineering organizations in regulated industries - team design, culture, career development, and operational excellence",
+      "category": "Technology strategy",
+      "topics": [
+        "agentic-ai",
+        "engineering-leadership",
+        "fintech",
+        "operating-model",
+        "platform-engineering",
+        "regulated-industries",
+        "talent-density",
+        "technology-strategy"
+      ],
+      "language": "",
+      "archived": false
+    },
+    {
+      "name": "fintech-platform-reference",
+      "blurb": "Reference architecture for a regulated fintech engineering platform - ADRs, system design, catalog definitions, and SLO specs",
+      "category": "Control plane and governance",
+      "topics": [
+        "adr",
+        "architecture",
+        "ffiec",
+        "fintech",
+        "pci-dss",
+        "platform-engineering",
+        "reference",
+        "sox"
+      ],
+      "language": "",
+      "archived": false
+    },
+    {
+      "name": "genai-trace-conformance",
+      "blurb": "Deterministic conformance validator for GenAI/agent telemetry. Checks real OTLP traces against the OpenTelemetry GenAI semantic conventions: required gen_ai.* attributes, token/cost observability, content-capture safety (flags secrets in telemetry), and agent-trace structure. Graded, CI-gateable, no LLM.",
+      "category": "Observability",
+      "topics": [
+        "ai-agents",
+        "genai",
+        "llm-observability",
+        "observability",
+        "opentelemetry",
+        "otlp",
+        "python",
+        "semantic-conventions"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "innersource-scorecard",
+      "blurb": "Inner-source health scorecard - grades repos on discoverability, documentation, contribution friction, and adoption",
+      "category": "Platform patterns",
+      "topics": [
+        "developer-experience",
+        "fintech",
+        "innersource",
+        "platform-engineering",
+        "python",
+        "scoring"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "integrated-strategy",
+      "blurb": "The integrated strategy: how platform engineering, organizational design, and AI governance fit together - the entry point to a four-document body of work on winning the AI era in regulated industries",
+      "category": "Technology strategy",
+      "topics": [
+        "ai-governance",
+        "ai-strategy",
+        "engineering-leadership",
+        "fintech",
+        "operating-model",
+        "platform-engineering",
+        "regulated-industries",
+        "technology-strategy"
+      ],
+      "language": "",
+      "archived": false
+    },
+    {
+      "name": "mcp-compliance-grc",
+      "blurb": "MCP server for GRC workflows - maps controls to code evidence and drafts compliance narratives",
+      "category": "MCP servers",
+      "topics": [
+        "compliance",
+        "fintech",
+        "iso27001",
+        "mcp",
+        "model-context-protocol",
+        "pci-dss",
+        "python",
+        "sox"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "mcp-developer-portal",
+      "blurb": "MCP server wrapping Backstage - query service catalog, fetch TechDocs, and scaffold services via AI agents",
+      "category": "MCP servers",
+      "topics": [
+        "backstage",
+        "developer-portal",
+        "mcp",
+        "model-context-protocol",
+        "platform-engineering",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "mcp-evidence-ledger",
+      "blurb": "MCP server providing an append-only, hash-chained evidence ledger for agent actions. Tamper-evident receipts over human-readable local state; verify pinpoints any altered record. Deterministic, no LLM.",
+      "category": "MCP servers",
+      "topics": [
+        "agent-governance",
+        "audit-trail",
+        "hash-chain",
+        "mcp",
+        "mcp-server",
+        "provenance",
+        "python",
+        "tamper-evident"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "mcp-governance-gateway",
+      "blurb": "Write-path MCP server: every governance action routes through a deterministic policy engine and produces an immutable, hash-sealed decision record.",
+      "category": "MCP servers",
+      "topics": [
+        "agentic-ai",
+        "audit-trail",
+        "fintech",
+        "governance",
+        "mcp",
+        "model-context-protocol",
+        "policy-engine",
+        "regulated-industries"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "mcp-incident-intel",
+      "blurb": "MCP server wiring PagerDuty, Dynatrace, and runbook context for AI-driven incident response",
+      "category": "MCP servers",
+      "topics": [
+        "dynatrace",
+        "incident-response",
+        "mcp",
+        "model-context-protocol",
+        "pagerduty",
+        "python",
+        "sre"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "orbit-platform",
+      "blurb": "Production Services Control Plane - a 6-stage image build and deployment governance framework for regulated financial services",
+      "category": "Control plane and governance",
+      "topics": [
+        "control-plane",
+        "fintech",
+        "governance",
+        "opa",
+        "platform-engineering",
+        "policy-engine",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "otel-pipeline-workbench",
+      "blurb": "Deterministic workbench for OpenTelemetry Collector configs: lint them for correctness, security, and cost-safety, and simulate telemetry flow to see what a config drops, samples, and transforms before prod. CI-gateable, no LLM.",
+      "category": "Observability",
+      "topics": [
+        "collector",
+        "devsecops",
+        "observability",
+        "opentelemetry",
+        "otel",
+        "python",
+        "tail-sampling",
+        "telemetry"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "platform-conductor",
+      "blurb": "Meta-orchestrator for the brianpelow platform - coordinates agents, detects failures, and publishes weekly health summaries",
+      "category": "Control plane and governance",
+      "topics": [
+        "agents",
+        "autonomous",
+        "fintech",
+        "github-actions",
+        "orchestration",
+        "platform-engineering",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "platform-engineering-thesis",
+      "blurb": "A technology strategy thesis: where platform engineering and agentic AI intersect in regulated industries, 2026-2030",
+      "category": "Technology strategy",
+      "topics": [
+        "agentic-ai",
+        "ai-strategy",
+        "fintech",
+        "machine-readable-compliance",
+        "opa",
+        "platform-engineering",
+        "regulated-industries",
+        "technology-strategy"
+      ],
+      "language": "",
+      "archived": false
+    },
+    {
+      "name": "platform-maturity-assessment",
+      "blurb": "Interactive platform maturity assessment for engineering leaders - 6 domains, 20 questions, scored report with recommendations",
+      "category": "Interactive tools",
+      "topics": [
+        "assessment",
+        "devops",
+        "fintech",
+        "governance",
+        "interactive",
+        "maturity-model",
+        "platform-engineering",
+        "regulated-industries"
+      ],
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "name": "platform-maturity-model",
+      "blurb": "Open framework and CLI for assessing platform engineering maturity - 5-level model with automated evidence collection",
+      "category": "Platform patterns",
+      "topics": [
+        "devops",
+        "engineering-excellence",
+        "fintech",
+        "maturity-model",
+        "platform-engineering",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "portfolio-assistant",
+      "blurb": "AI-powered portfolio assistant - ask questions about the brianpelow engineering portfolio",
+      "category": "Interactive tools",
+      "topics": [
+        "ai-assistant",
+        "claude",
+        "github-pages",
+        "platform-engineering",
+        "portfolio"
+      ],
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "name": "pr-autopilot",
+      "blurb": "CLI that auto-generates PR descriptions, reviewers, and labels from your diff using AI",
+      "category": "Developer productivity",
+      "topics": [
+        "ai-assisted",
+        "cli",
+        "developer-productivity",
+        "github",
+        "platform-engineering",
+        "pull-request",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "regulatory-change-impact-agent",
+      "blurb": "Takes regulatory guidance, identifies affected systems, and produces a sequenced remediation plan - deterministic impact mapping for regulated engineering organizations",
+      "category": "Control plane and governance",
+      "topics": [
+        "ai-governance",
+        "compliance",
+        "deterministic",
+        "fintech",
+        "impact-assessment",
+        "model-risk",
+        "regtech",
+        "regulated-industries"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "repoforge",
+      "blurb": "AI-assisted repo scaffolding CLI for regulated industries engineering teams",
+      "category": "Developer productivity",
+      "topics": [
+        "ai-assisted",
+        "cli",
+        "developer-productivity",
+        "fintech",
+        "platform-engineering",
+        "python",
+        "scaffolding"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "runbook-gen",
+      "blurb": "Auto-generates operational runbooks from code, alerts, and incident history using AI",
+      "category": "Developer productivity",
+      "topics": [
+        "cli",
+        "developer-productivity",
+        "fintech",
+        "platform-engineering",
+        "python",
+        "runbooks",
+        "sre"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "service-catalog-sync",
+      "blurb": "Automated Backstage catalog hydration - scans repos, infers ownership and tech stack, keeps catalog fresh via CI",
+      "category": "Platform patterns",
+      "topics": [
+        "backstage",
+        "catalog",
+        "developer-portal",
+        "innersource",
+        "platform-engineering",
+        "python"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "sports-analytics-for-engineers",
+      "blurb": "DORA metrics for sports teams - deployment frequency, change failure rate, and MTTR applied to your favorite teams",
+      "category": "Just for fun",
+      "topics": [
+        "analytics",
+        "cli",
+        "developer-tools",
+        "dora-metrics",
+        "fun",
+        "python",
+        "sports"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "vibe-check-cli",
+      "blurb": "Analyzes the vibe of any GitHub repo - commit messages, PR titles, README tone - and delivers a brutally honest vibe report",
+      "category": "Just for fun",
+      "topics": [
+        "cli",
+        "developer-tools",
+        "fun",
+        "github",
+        "llm",
+        "python",
+        "vibe"
+      ],
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "weekly-platform-intelligence",
+      "blurb": "Weekly executive brief on platform engineering, agentic AI, and regulated industry technology - published every Monday by an autonomous agent",
+      "category": "Autonomous intelligence",
+      "topics": [
+        "agentic-ai",
+        "ai-governance",
+        "autonomous",
+        "fintech",
+        "newsletter",
+        "platform-engineering",
+        "regulated-industries",
+        "weekly"
+      ],
+      "language": "Python",
+      "archived": false
+    }
+  ]
+}
