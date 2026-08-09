@@ -151,6 +151,16 @@ class SurfaceState:
     def healthy(self) -> bool:
         return self.status == 200 and self.non_ascii == 0 and not self.error
 
+    @property
+    def verified(self) -> bool:
+        """True when the check completed and produced an HTTP status.
+
+        A check that could not complete says nothing about the surface. Keeping
+        the two apart is the point: 'down' and 'not checked' are different
+        claims, and a status document that merges them publishes false outages.
+        """
+        return self.status is not None
+
 
 @dataclass
 class PortfolioState:
@@ -189,7 +199,16 @@ class PortfolioState:
 
     @property
     def unhealthy_surfaces(self) -> list[SurfaceState]:
-        return [s for s in self.surfaces if not s.healthy]
+        """Surfaces that were checked and failed. Unverified ones are excluded."""
+        return [s for s in self.surfaces if s.verified and not s.healthy]
+
+    @property
+    def verified_surfaces(self) -> list[SurfaceState]:
+        return [s for s in self.surfaces if s.verified]
+
+    @property
+    def unverified_surfaces(self) -> list[SurfaceState]:
+        return [s for s in self.surfaces if not s.verified]
 
     @property
     def failing_ci(self) -> list[str]:

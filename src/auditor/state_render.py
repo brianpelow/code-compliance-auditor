@@ -51,6 +51,9 @@ def render(state: PortfolioState) -> str:
 def _summary(state: PortfolioState) -> list[str]:
     grades = ", ".join(f"{n} {g}" for g, n in state.grade_counts.items()) or "none"
     healthy = sum(1 for s in state.surfaces if s.healthy)
+    verified = len(state.verified_surfaces)
+    unverified = len(state.unverified_surfaces)
+    surface_note = f", {unverified} not verified" if unverified else ""
 
     return [
         "## Summary",
@@ -61,7 +64,7 @@ def _summary(state: PortfolioState) -> list[str]:
         f"| Scheduled agents | {state.scheduled_agents} |",
         f"| Audit average | {state.average_score}/100 |",
         f"| Grade distribution | {grades} |",
-        f"| Live surfaces healthy | {healthy} of {len(state.surfaces)} |",
+        f"| Live surfaces healthy | {healthy} of {verified} checked{surface_note} |",
         f"| Repos below B | {len(state.below_b)} |",
         "",
     ]
@@ -87,6 +90,12 @@ def _action_items(state: PortfolioState) -> list[str]:
                 "Encoding corruption may be recurring; convert literals to HTML entities."
             )
 
+    for surface in state.unverified_surfaces:
+        items.append(
+            f"**{surface.url}** could not be verified this run: {surface.error}. "
+            "This is a gap in the check, not a reported outage."
+        )
+
     for repo in state.failing_ci:
         items.append(f"**{repo}** CI is {state.ci_status[repo]}")
 
@@ -101,8 +110,8 @@ def _action_items(state: PortfolioState) -> list[str]:
         return [
             "## Action items",
             "",
-            "None. All surfaces healthy, all repos categorized, no repo below grade B,",
-            "all CI green.",
+            "None. All surfaces checked and healthy, all repos categorized,",
+            "no repo below grade B, all CI green.",
             "",
         ]
 
@@ -161,7 +170,9 @@ def _surfaces(state: PortfolioState) -> list[str]:
         "|-----|--------|----------|",
     ]
     for s in state.surfaces:
-        if s.error:
+        if not s.verified:
+            lines.append(f"| {s.url} | not verified | check did not complete |")
+        elif s.error:
             lines.append(f"| {s.url} | error | {s.error} |")
         else:
             encoding = "clean" if s.non_ascii == 0 else f"{s.non_ascii} non-ASCII"
