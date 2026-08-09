@@ -1,6 +1,6 @@
 # Compliance Audit: brianpelow/code-compliance-auditor
 
-**Grade:** A  |  **Score:** 93/100  |  **Date:** 2026-08-08
+**Grade:** A  |  **Score:** 93/100  |  **Date:** 2026-08-09
 
 brianpelow/code-compliance-auditor scores 93/100 (grade A) across security (85), compliance (100), and technical debt (97). 1 high-severity finding(s) should be resolved before the next release. The highest-priority item is: Shell execution with shell=True.
 
@@ -17,7 +17,7 @@ brianpelow/code-compliance-auditor scores 93/100 (grade A) across security (85),
 | Severity | Rule | Title | Path |
 |----------|------|-------|------|
 | high | SEC013 | Shell execution with shell=True | `audit_all.py` |
-| low | DBT004 | Deeply nested code | `src/auditor/agents/compliance.py` |
+| low | DBT004 | Deeply nested code | `scripts/generate_catalog.py` |
 
 ## Fix first
 

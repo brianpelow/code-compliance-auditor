@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-08-09T00:59:14+00:00
+**Generated:** 2026-08-09T04:11:13+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -14,8 +14,8 @@ which is why it cannot drift the way a hand-maintained document does.
 | Metric | Value |
 |--------|-------|
 | Public repos | 45 |
-| Scheduled agents | 36 |
-| Audit average | 94.9/100 |
+| Scheduled agents | 37 |
+| Audit average | 95.0/100 |
 | Grade distribution | 35 A, 8 B, 2 C |
 | Live surfaces healthy | 5 of 5 checked |
 | Repos below B | 1 |
@@ -128,7 +128,7 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
-| brianpelow * | C | 76 | 8 |
+| brianpelow * | C | 81 | 7 |
 | brianpelow.github.io | B | 86 | 6 |
 
 ### Uncategorized
