@@ -14,6 +14,7 @@ from auditor.blocks import (
 CATALOG = {
     "generated_at": "2026-08-08T04:07:24+00:00",
     "category_order": ["Technology strategy", "Observability", "MCP servers"],
+    "readme_category_order": ["Observability", "Technology strategy", "MCP servers"],
     "entries": [
         {
             "name": "otel-pipeline-workbench",
@@ -112,6 +113,20 @@ def test_errored_audit_is_not_treated_as_a_grade():
 def test_only_first_category_omits_the_margin_offset():
     html = render_dashboard_block(CATALOG, STATE)
     assert html.count('style="margin-top:1px;"') == html.count('class="category"') - 1
+
+
+def test_readme_uses_its_own_category_order():
+    """The dashboard leads with strategy; the README leads with the tools."""
+    md = render_readme_block(CATALOG, STATE)
+    assert md.index("### Observability") < md.index("### Technology strategy")
+    html = render_dashboard_block(CATALOG, STATE)
+    assert html.index("Technology strategy") < html.index("Observability")
+
+
+def test_readme_falls_back_to_the_shared_order_when_unset():
+    catalog = {k: v for k, v in CATALOG.items() if k != "readme_category_order"}
+    md = render_readme_block(catalog, STATE)
+    assert md.index("### Technology strategy") < md.index("### Observability")
 
 
 def test_readme_block_emits_a_table_per_category():

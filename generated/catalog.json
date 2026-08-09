@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T00:32:13+00:00",
+  "generated_at": "2026-08-09T01:14:36+00:00",
   "category_order": [
     "Technology strategy",
     "Control plane and governance",
@@ -14,6 +14,20 @@
     "Just for fun",
     "Meta",
     "Uncategorized"
+  ],
+  "readme_category_order": [
+    "Agentic systems",
+    "MCP servers",
+    "Observability",
+    "Engineering metrics",
+    "Developer productivity",
+    "Platform patterns",
+    "Technology strategy",
+    "Control plane and governance",
+    "Autonomous intelligence",
+    "Interactive tools",
+    "Just for fun",
+    "Meta"
   ],
   "entries": [
     {

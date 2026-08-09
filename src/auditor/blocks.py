@@ -72,8 +72,14 @@ def _grades(state: dict) -> dict[str, dict]:
     return {r["name"]: r for r in state.get("repos", []) if not r.get("error")}
 
 
-def _ordered(catalog: dict) -> list[tuple[str, list[dict]]]:
-    """Group entries by category, following the catalog's declared order."""
+def _ordered(catalog: dict, order_key: str = "category_order") -> list[tuple[str, list[dict]]]:
+    """Group entries by category, following a declared order.
+
+    The dashboard and the README present the same categories in different
+    sequences, so each names its own order key. Any category not in the
+    declared order still appears, sorted after the declared ones, because a
+    silently dropped repo is the failure this whole module exists to prevent.
+    """
     grouped: dict[str, list[dict]] = {}
     for entry in catalog.get("entries", []):
         grouped.setdefault(entry.get("category", "Uncategorized"), []).append(entry)
@@ -81,7 +87,7 @@ def _ordered(catalog: dict) -> list[tuple[str, list[dict]]]:
         entries.sort(key=lambda e: e["name"].lower())
 
     ordered: list[tuple[str, list[dict]]] = []
-    declared = list(catalog.get("category_order", ()))
+    declared = list(catalog.get(order_key) or catalog.get("category_order", ()))
     for category in declared:
         if grouped.get(category):
             ordered.append((category, grouped[category]))
@@ -138,7 +144,7 @@ def render_readme_block(catalog: dict, state: dict) -> str:
     grades = _grades(state)
     lines: list[str] = []
 
-    for category, entries in _ordered(catalog):
+    for category, entries in _ordered(catalog, "readme_category_order"):
         lines.append(f"### {category}")
         lines.append("")
         lines.append("| Repo | What it does | Audit |")

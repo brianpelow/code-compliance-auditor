@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-08-09T00:29:26+00:00
+**Generated:** 2026-08-09T00:59:14+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -14,7 +14,7 @@ which is why it cannot drift the way a hand-maintained document does.
 | Metric | Value |
 |--------|-------|
 | Public repos | 45 |
-| Scheduled agents | 35 |
+| Scheduled agents | 36 |
 | Audit average | 94.9/100 |
 | Grade distribution | 35 A, 8 B, 2 C |
 | Live surfaces healthy | 5 of 5 checked |

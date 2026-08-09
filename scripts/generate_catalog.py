@@ -13,6 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from auditor.catalog import collect, render_catalog  # noqa: E402
+from auditor.catalog_overrides import README_CATEGORY_ORDER  # noqa: E402
 from auditor.state import CATEGORY_ORDER  # noqa: E402
 
 
@@ -26,6 +27,7 @@ def main() -> int:
             {
                 "generated_at": catalog.generated_at,
                 "category_order": list(CATEGORY_ORDER),
+                "readme_category_order": list(README_CATEGORY_ORDER),
                 "entries": [
                     {
                         "name": e.name,

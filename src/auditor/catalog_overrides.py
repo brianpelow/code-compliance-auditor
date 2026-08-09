@@ -54,3 +54,22 @@ BLURB_OVERRIDES: dict[str, str] = {
 
 # repo name -> category (overrides the CATEGORIES map if present)
 CATEGORY_OVERRIDES: dict[str, str] = {}
+
+
+# Category order for the profile README, which leads with the tooling rather
+# than the strategy. Categories absent from this tuple still render, sorted
+# after the declared ones.
+README_CATEGORY_ORDER: tuple[str, ...] = (
+    "Agentic systems",
+    "MCP servers",
+    "Observability",
+    "Engineering metrics",
+    "Developer productivity",
+    "Platform patterns",
+    "Technology strategy",
+    "Control plane and governance",
+    "Autonomous intelligence",
+    "Interactive tools",
+    "Just for fun",
+    "Meta",
+)
