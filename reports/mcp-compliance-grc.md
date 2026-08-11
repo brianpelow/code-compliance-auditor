@@ -1,6 +1,6 @@
 # Compliance Audit: brianpelow/mcp-compliance-grc
 
-**Grade:** A  |  **Score:** 98/100  |  **Date:** 2026-08-10
+**Grade:** A  |  **Score:** 98/100  |  **Date:** 2026-08-11
 
 brianpelow/mcp-compliance-grc scores 98/100 (grade A) across security (97), compliance (100), and technical debt (97). No critical or high-severity findings were detected. The highest-priority item is: Deeply nested code.
 
