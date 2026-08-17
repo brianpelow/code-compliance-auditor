@@ -65,6 +65,7 @@ CATEGORIES: dict[str, str] = {
     "service-catalog-sync": "Platform patterns",
     # Developer productivity
     "repoforge": "Developer productivity",
+    "ai-authorship-ledger": "Developer productivity",
     "pr-autopilot": "Developer productivity",
     "runbook-gen": "Developer productivity",
     # Interactive tools
