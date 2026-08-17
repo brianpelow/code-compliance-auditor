@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-08-17T03:41:20+00:00
+**Generated:** 2026-08-17T22:33:44+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -15,7 +15,7 @@ which is why it cannot drift the way a hand-maintained document does.
 |--------|-------|
 | Public repos | 45 |
 | Scheduled agents | 37 |
-| Audit average | 95.0/100 |
+| Audit average | 95.1/100 |
 | Grade distribution | 35 A, 8 B, 2 C |
 | Live surfaces healthy | 5 of 5 checked |
 | Repos below B | 1 |
@@ -128,14 +128,14 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
-| brianpelow * | C | 81 | 7 |
-| brianpelow.github.io | B | 86 | 6 |
+| brianpelow * | C | 84 | 6 |
+| brianpelow.github.io | B | 89 | 5 |
 
 ### Uncategorized
 
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
-| cve-bin-tool | B | 89 | 6 |
+| cve-bin-tool | B | 87 | 7 |
 | git_test | C | 75 | 9 |
 
 **\*** Structural exception:

@@ -9,6 +9,7 @@ Only public standards are referenced. No organization-specific controls.
 from __future__ import annotations
 
 from auditor.models import AgentResult, Finding, RepoSnapshot, Severity, score_from_findings
+from auditor.licenses import identify as identify_license
 
 CI_DIR = ".github/workflows"
 
@@ -64,6 +65,49 @@ class ComplianceAgent:
                     severity=Severity.MEDIUM,
                     detail="Absent license terms create downstream legal ambiguity.",
                     remediation="Add an explicit LICENSE file.",
+                )
+            )
+            return 1
+        return 1 + self._check_license_content(snap, findings)
+
+    def _check_license_content(self, snap: RepoSnapshot, findings: list[Finding]) -> int:
+        """A LICENSE file that is not a license text grants nothing.
+
+        CMP002 checks that the file exists. Existence is not a grant: a pointer
+        to a URL, or a four-line summary, leaves recipients without the terms
+        the project claims to offer. Apache-2.0 section 4(a) requires that
+        recipients be given a copy of the License itself.
+        """
+        text = None
+        for name in ("LICENSE", "LICENSE.md", "LICENSE.txt", "COPYING"):
+            for path, content in snap.files.items():
+                if path.lower() == name.lower():
+                    text = content
+                    break
+            if text is not None:
+                break
+
+        if text is None:
+            return 0
+
+        verdict, _spdx = identify_license(text)
+        if verdict == "stub":
+            findings.append(
+                Finding(
+                    rule_id="CMP011",
+                    title="LICENSE file is not a recognized license text",
+                    severity=Severity.MEDIUM,
+                    detail=(
+                        "A LICENSE file is present but does not contain a recognized "
+                        "license text. A pointer or summary does not convey the terms, "
+                        "so downstream recipients have no grant to rely on and automated "
+                        "license detection reports the project as unlicensed."
+                    ),
+                    remediation=(
+                        "Replace the file with the full, unmodified license text. Put "
+                        "the copyright line in a separate NOTICE file so the license "
+                        "text stays byte-identical and remains machine-detectable."
+                    ),
                 )
             )
         return 1
