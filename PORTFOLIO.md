@@ -2,8 +2,8 @@
 
 > Auto-generated manifest of every public repository. Regenerated nightly from the GitHub API by the portfolio's own catalog generator. Do not edit by hand; changes are overwritten on the next run.
 
-**Generated:** 2026-08-17T03:43:37+00:00  
-**Total public repositories:** 43
+**Generated:** 2026-08-18T03:40:16+00:00  
+**Total public repositories:** 44
 
 ---
 
@@ -106,6 +106,8 @@
 
 ## Developer productivity
 
+- **[ai-authorship-ledger](https://github.com/brianpelow/ai-authorship-ledger)** - Deterministic provenance for AI-assisted code. Attributes commits to authorship classes, checks distinct-human review on regulated paths, and seals each scan in a hash-chained ledger. No LLM.  
+  `ai-governance` `audit-trail` `code-provenance` `deterministic` `developer-productivity` `sox-itgc`
 - **[pr-autopilot](https://github.com/brianpelow/pr-autopilot)** - CLI that auto-generates PR descriptions, reviewers, and labels from your diff using AI  
   `ai-assisted` `cli` `developer-productivity` `github` `platform-engineering` `pull-request`
 - **[repoforge](https://github.com/brianpelow/repoforge)** - AI-assisted repo scaffolding CLI for regulated industries engineering teams  

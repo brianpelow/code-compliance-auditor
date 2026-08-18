@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-08-17T22:33:44+00:00
+**Generated:** 2026-08-18T03:37:19+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -13,10 +13,10 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Metric | Value |
 |--------|-------|
-| Public repos | 45 |
+| Public repos | 46 |
 | Scheduled agents | 37 |
-| Audit average | 95.1/100 |
-| Grade distribution | 35 A, 8 B, 2 C |
+| Audit average | 95.2/100 |
+| Grade distribution | 36 A, 8 B, 2 C |
 | Live surfaces healthy | 5 of 5 checked |
 | Repos below B | 1 |
 
@@ -112,6 +112,7 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
+| ai-authorship-ledger | A | 99 | 2 |
 | pr-autopilot | A | 98 | 2 |
 | repoforge | A | 93 | 3 |
 | runbook-gen | A | 99 | 1 |

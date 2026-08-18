@@ -1,6 +1,6 @@
 # Compliance Audit: brianpelow/code-compliance-auditor
 
-**Grade:** A  |  **Score:** 93/100  |  **Date:** 2026-08-17
+**Grade:** A  |  **Score:** 93/100  |  **Date:** 2026-08-18
 
 brianpelow/code-compliance-auditor scores 93/100 (grade A) across security (85), compliance (100), and technical debt (97). 1 high-severity finding(s) should be resolved before the next release. The highest-priority item is: Shell execution with shell=True.
 
@@ -9,7 +9,7 @@ brianpelow/code-compliance-auditor scores 93/100 (grade A) across security (85),
 | Agent | Score | Findings | Checks |
 |-------|-------|----------|--------|
 | SecurityAgent | 85/100 | 1 | 15 |
-| ComplianceAgent | 100/100 | 0 | 9 |
+| ComplianceAgent | 100/100 | 0 | 10 |
 | DebtAgent | 97/100 | 1 | 5 |
 
 ## Findings

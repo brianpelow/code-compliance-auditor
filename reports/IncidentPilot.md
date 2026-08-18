@@ -1,6 +1,6 @@
 # Compliance Audit: brianpelow/IncidentPilot
 
-**Grade:** A  |  **Score:** 99/100  |  **Date:** 2026-08-17
+**Grade:** A  |  **Score:** 99/100  |  **Date:** 2026-08-18
 
 brianpelow/IncidentPilot scores 99/100 (grade A) across security (97), compliance (100), and technical debt (100). No critical or high-severity findings were detected. The highest-priority item is: No security policy.
 
@@ -9,7 +9,7 @@ brianpelow/IncidentPilot scores 99/100 (grade A) across security (97), complianc
 | Agent | Score | Findings | Checks |
 |-------|-------|----------|--------|
 | SecurityAgent | 97/100 | 1 | 15 |
-| ComplianceAgent | 100/100 | 0 | 9 |
+| ComplianceAgent | 100/100 | 0 | 10 |
 | DebtAgent | 100/100 | 0 | 5 |
 
 ## Findings
