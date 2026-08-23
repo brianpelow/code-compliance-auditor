@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-08-21T03:42:57+00:00
+**Generated:** 2026-08-23T03:42:28+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
@@ -13,18 +13,16 @@ which is why it cannot drift the way a hand-maintained document does.
 
 | Metric | Value |
 |--------|-------|
-| Public repos | 46 |
+| Public repos | 45 |
 | Scheduled agents | 37 |
-| Audit average | 95.2/100 |
-| Grade distribution | 36 A, 8 B, 2 C |
+| Audit average | 95.8/100 |
+| Grade distribution | 36 A, 8 B, 1 C |
 | Live surfaces healthy | 5 of 5 checked |
-| Repos below B | 1 |
+| Repos below B | 0 |
 
 ## Action items
 
 - **cve-bin-tool** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
-- **git_test** is not in the category map. Add it to `CATEGORIES` in `src/auditor/state.py` and to the dashboard catalog.
-- **git_test** scores 75/100 (grade C)
 
 ## Repository catalog
 
@@ -114,7 +112,7 @@ which is why it cannot drift the way a hand-maintained document does.
 |------|-------|-------|----------|
 | ai-authorship-ledger | A | 99 | 2 |
 | pr-autopilot | A | 98 | 2 |
-| repoforge | A | 93 | 3 |
+| repoforge | A | 98 | 2 |
 | runbook-gen | A | 99 | 1 |
 
 ### Just for fun
@@ -137,7 +135,6 @@ which is why it cannot drift the way a hand-maintained document does.
 | Repo | Grade | Score | Findings |
 |------|-------|-------|----------|
 | cve-bin-tool | B | 87 | 7 |
-| git_test | C | 75 | 9 |
 
 **\*** Structural exception:
 
