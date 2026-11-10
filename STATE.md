@@ -1,6 +1,6 @@
 # Portfolio State
 
-**Generated:** 2026-11-09T10:39:22+00:00
+**Generated:** 2026-11-10T10:38:01+00:00
 **Source:** live GitHub API and code-compliance-auditor
 
 This file is machine-generated on a nightly schedule. Do not edit it by hand;
