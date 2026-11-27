@@ -2,7 +2,7 @@
 
 > Auto-generated manifest of every public repository. Regenerated nightly from the GitHub API by the portfolio's own catalog generator. Do not edit by hand; changes are overwritten on the next run.
 
-**Generated:** 2026-11-26T11:46:52+00:00  
+**Generated:** 2026-11-27T11:39:46+00:00  
 **Total public repositories:** 44
 
 ---
@@ -24,7 +24,8 @@
   `cab` `change-management` `fintech` `governance` `pci-dss` `platform-engineering`
 - **[code-compliance-auditor](https://github.com/brianpelow/code-compliance-auditor)** - Deterministic multi-agent compliance auditor for GitHub repositories - security, compliance, and technical debt scoring with prioritized remediation  
   `audit` `compliance` `devsecops` `fintech` `governance` `regulated-industries`
-- **[compliance-chaos-engineer](https://github.com/brianpelow/compliance-chaos-engineer)** - Chaos engineering for governance controls. Injects governance failures and scores detection, honestly reporting a designed blind spot rather than a rigged 100 percent.
+- **[compliance-chaos-engineer](https://github.com/brianpelow/compliance-chaos-engineer)** - Chaos engineering for governance controls. Injects governance failures and scores detection, honestly reporting a designed blind spot rather than a rigged 100 percent.  
+  `chaos-engineering` `compliance` `fintech` `governance` `python` `regulated-industries`
 - **[fintech-platform-reference](https://github.com/brianpelow/fintech-platform-reference)** - Reference architecture for a regulated fintech engineering platform - ADRs, system design, catalog definitions, and SLO specs  
   `adr` `architecture` `ffiec` `fintech` `pci-dss` `platform-engineering`
 - **[orbit-platform](https://github.com/brianpelow/orbit-platform)** - Production Services Control Plane - a 6-stage image build and deployment governance framework for regulated financial services  
